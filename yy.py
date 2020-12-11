@@ -12,7 +12,7 @@ ip4 = random.randint(0, 255)
 random_ip = str(ip1) + '.' + str(ip2) + '.' + str(ip3) + '.' + str(ip4)
 print(random_ip)
 
-s = 'fuck tangwei'
+s = 'fuck tangwei&yuxiaobin'
 z = s.upper()
 yy = z.lower()
 print(z)
