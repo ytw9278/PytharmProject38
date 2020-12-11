@@ -14,4 +14,6 @@ print(random_ip)
 
 s = 'fuck tangwei'
 z = s.upper()
+yy = z.lower()
 print(z)
+print(yy)
