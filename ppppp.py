@@ -1,63 +1,27 @@
-import imgkit
-from HTMLTable import  HTMLTable
+# s = 'fuck tangwei'
+# s = s.replace('tangwei', 'yuxiaobin')
+#
+# print(s)
+# rint(le)
+#
+# age = input('你几岁了？')
+# print(age)
+# print(type(age))
+# length = len(s)
+# print(length)
 
-# 标题
-table = HTMLTable(caption='果园收成表')
-# 表头行
-table.append_header_rows((
-    ['名称', '产量 (吨)', '增长量 (吨)', '增长率 (%)'],
-))
+# bank = 1000
+# money = input('请输入金额:')
+# money = int(money)
+# if money <= bank :
+#     bank = bank-money
+#     print('取款成功，余额为:'+ str(bank))
+# else:
+#     print('取款失败，当前余额为:'+ str(bank))
 
-# 数据行
-table.append_data_rows((
-    ('荔枝', 11, 1, 10),
-    ('芒果', 9, -1, -10),
-    ('香蕉', 6, 1, 20),
-))
-# 标题样式
-table.caption.set_style({
-    'font-size': '15px',
-})
-# 表格样式，即<table>标签样式
-table.set_style({
-    'border-collapse': 'collapse',
-    'word-break': 'keep-all',
-    'white-space': 'nowrap',
-    'font-size': '14px',
-})
-# 统一设置所有单元格样式，<td>或<th>
-table.set_cell_style({
-    'width': "250px",
-    'border-color': '#000',
-    'border-width': '1px',
-    'border-style': 'solid',
-    'padding': '5px',
-})
-# 表头样式
-table.set_header_row_style({
-    'color': '#fff',
-    'background-color': '#48a6fb',
-    'font-size': '18px',
-})
 
-# 覆盖表头单元格字体样式
-table.set_header_cell_style({
-    'padding': '15px',
-})
-# 调小次表头字体大小
-table[1].set_cell_style({
-    'padding': '8px',
-    'font-size': '15px',
-})
-# 遍历数据行，如果增长量为负，标红背景颜色
-for row in table.iter_data_rows():
-    if row[2].value < 0:
-        row.set_style({
-            'background-color': '#ffdddd',
-        })
-body = table.to_html()
-# html的charset='UTF-8'必须加上，否则中午会乱码
-html = "<!DOCTYPE html><html><head><meta charset='UTF-8'></head><body>{0}</body></html>".format(body)
 
-# 生成图片
-imgkit.from_string(html, 'out.jpg')
+
+
+for i in range(1,101):    #左开右关  遍历
+    print(i)
