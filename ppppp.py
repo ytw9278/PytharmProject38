@@ -116,16 +116,31 @@
 # print(y)
 
 
-class Girl:
-    def __init__(self, hair, name, age):
-        self.hair = hair
-        self.name = name
-        self.age = age
-    def eat(self):
-        print(self.name, '我想入肉你')
+# class Girl:
+#     def __init__(self, hair, name, age):
+#         self.hair = hair
+#         self.name = name
+#         self.age = age
+#     def eat(self):
+#         print(self.name, '我想入肉你')
+#
+#
+# girl1 = Girl('长头发','tt', 36)
+# girl1.eat()
+# girl2 = Girl('短头发','yxb', 39)
+# girl2.eat()
 
 
-girl1 = Girl('长头发','tt', 36)
-girl1.eat()
-girl2 = Girl('短头发','yxb', 39)
-girl2.eat()
+# class Car:
+#     def __init__(self, color, brand, type):
+#         self.color = color
+#         self.brand = brand
+#         self.type = type
+#     def run(self):
+#         print(self.color, '颜色的小汽车在行驶')
+#         print('This is a', self.type, 'car')
+# car1 = Car('white', 'BWM', 'X5')
+# car1.run()
+
+
+import openpyxl
